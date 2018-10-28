@@ -1,0 +1,45 @@
+h4 {
+    font-weight: bold;
+}
+
+.form-group {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    width: 200px;
+}
+
+#zipzap-in {
+    width: 5%;
+}
+
+#zipzap-out {
+    width: 85%;
+}
+
+#circle-radius,
+#point-x,
+#point-y {
+    width: 50px;
+}
+
+#water-in {
+    width: 85%;
+}
+
+#water-out {
+    width: 5%;
+}
+
+#sign-go {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+}
