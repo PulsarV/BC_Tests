@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceptance tests</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Task 1</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <h4>Enter a decimal number (enter the correct data, because validation is not implemented):</h4>
+                            <input type="text" class="form-control" id="dec-to-hex-in">
+                            <button type="button" class="btn btn-success" id="dec-to-hex-go">Convert to Hex</button>
+                            <input type="text" class="form-control" id="dec-to-hex-out" disabled>
+                        </div>
+                        <div class="form-group">
+                            <h4>Enter a decimal number (enter the correct data, because validation is not implemented):</h4>
+                            <input type="text" class="form-control" id="dec-to-bin-in">
+                            <button type="button" class="btn btn-success" id="dec-to-bin-go">Convert to Bin</button>
+                            <input type="text" class="form-control" id="dec-to-bin-out" disabled>
+                        </div>
+                        <div class="form-group">
+                            <h4>Enter a hexadecimal number (enter the correct data, because validation is not implemented):</h4>
+                            <input type="text" class="form-control" id="hex-to-bin-in">
+                            <button type="button" class="btn btn-success" id="hex-to-bin-go">Convert to Bin</button>
+                            <input type="text" class="form-control" id="hex-to-bin-out" disabled>
+                        </div>
+                        <div class="form-group">
+                            <h4>Enter a binary number (enter the correct data, because validation is not implemented):</h4>
+                            <input type="text" class="form-control" id="bin-to-hex-in">
+                            <button type="button" class="btn btn-success" id="bin-to-hex-go">Convert to Hex</button>
+                            <input type="text" class="form-control" id="bin-to-hex-out" disabled>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Task 2</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <h4>Enter the maximum integer value (enter the correct data, because validation is not implemented):</h4>
+                            <input type="text" class="form-control" id="zipzap-in">
+                            <button type="button" class="btn btn-success" id="zipzap-go">Get string</button>
+                            <input type="text" class="form-control" id="zipzap-out" disabled>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Task 3</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <h4>Enter the circle radius and coordinates of point (enter the correct data, because validation is not implemented):</h4>
+                            <label>
+                                R:<input type="text" class="form-control" id="circle-radius">
+                            </label>
+                            <label>
+                                X:<input type="text" class="form-control" id="point-x">
+                            </label>
+                            <label>
+                                Y:<input type="text" class="form-control" id="point-y">
+                            </label>
+                            <button type="button" class="btn btn-success" id="circle-go">Check</button>
+                            <input type="text" class="form-control" id="circle-out" disabled>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Task 4</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <h4>Enter height values separated by commas (enter the correct data, because validation is not implemented):</h4>
+                            <input type="text" class="form-control" id="water-in">
+                            <button type="button" class="btn btn-success" id="water-go">Calculate</button>
+                            <input type="text" class="form-control" id="water-out" disabled>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4>Task 5</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <h4>Enter valid RSA private key and text to be signing (enter the correct data, because validation is not implemented):</h4>
+                            <label>
+                                Text:<br>
+                                <textarea class="form-control" id="text-in" cols="75" rows="10"></textarea>
+                            </label>
+                            <label>
+                                Private key:<br>
+                                <textarea class="form-control" id="key-in" cols="75" rows="10"></textarea>
+                            </label>
+                            <button type="button" class="btn btn-success" id="sign-go">Create signature</button>
+                            <label>
+                                Signature:<br>
+                                <textarea class="form-control" id="sign-out" disabled cols="75" rows="10"></textarea>
+                            </label>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="node_modules/js-sha256/build/sha256.min.js"></script>
+    <script src="node_modules/jsencrypt/bin/jsencrypt.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
